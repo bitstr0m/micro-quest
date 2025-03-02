@@ -194,16 +194,6 @@ impl GameInstance {
                     Ok(response) => {
                         for update in response.updates.iter() {
                             self.process_update(&update).await;
-                            // match update {
-                            //     QuestUpdate::QuestDefinition(def) => {
-                            //         let mut state = self.state.write().unwrap();
-                            //         (*state).quest = def.clone();
-                            //     }
-                            //     QuestUpdate::Description(desc) => {
-                            //         let mut state = self.state.write().unwrap();
-                            //         (*state).log.push(GameLogEntry::new(GamePlayer::GM, desc.clone()));
-                            //     }
-                            // }
                         }
                         let _ = respond_to.send(Ok(()));
                     }

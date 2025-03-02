@@ -1,10 +1,9 @@
 use iced::alignment::Horizontal;
-use iced::{color, Center, Element, Fill};
 use iced::task::Task;
 use iced::widget::{
-    column, container, horizontal_space, row, scrollable, text, text_input,
-    vertical_space, Column,
+    column, container, horizontal_space, row, scrollable, text, text_input, vertical_space, Column,
 };
+use iced::{color, Center, Element, Fill};
 use iced_aw::widgets::spinner::Spinner;
 
 use crate::character::PlayerCharacter;
